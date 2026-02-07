@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delete Student</title>
+</head>
+
+<body>
+    <a href="/add">Add</a>
+    <a href="/show">Show</a>
+    <h2>Delete Student by ID</h2>
+
+    <form method="GET">
+        {% csrf_token %}
+
+        <label>Student ID:</label>
+        <input type="number" name="sid" required>
+
+        <button type="submit">Delete</button>
+    </form>
+
+    {% if msg %}
+    <p>{{ msg }}</p>
+    {% endif %}
+
+</body>
+
+</html>

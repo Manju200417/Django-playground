@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        td{
+            /* margin: 0 10px 0 10px; */
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <title>Add Student</title>
+</head>
+<body>
+    <a href="/add">Add</a>
+    <h2>Show Student</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        {% for s in stu %}
+            <tr>
+                <td>{{s.name}}</td>
+                <td>{{s.age}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
