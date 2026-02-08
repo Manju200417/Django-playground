@@ -21,4 +21,5 @@ from model_practice import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('add/',views.add_cust),
+    path('items/',views.items,name = 'items'),
 ]
