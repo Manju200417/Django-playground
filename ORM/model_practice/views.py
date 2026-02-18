@@ -9,7 +9,7 @@ def add_cust(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         
-        customer = Customer.objects.create(
+        Customer.objects.create(
             name = name,
             email = email,
             password = password
